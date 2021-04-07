@@ -3,7 +3,15 @@
  * When you're ready to start on your site, clear the file. Happy hacking!
  **/
 const baseUrl ="https://platzi-avo.vercel.app";
+//DELEGACIÓN DE EVENTOS
 const appNode= document.querySelector('#app');
+appNode.addEventListener("click",(event)=>{
+  if(event.target.nodeName==="H2"){
+    window.alert("Hola");
+  }
+});
+//DELEGACIÓN DE EVENTOS
+
 const formatPrice=(price)=>{
   const newPrice=new window.Intl.NumberFormat('en-EN', {
     style:"currency",
